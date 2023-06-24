@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <h1>CALCULATOR</h1>
+        <div class="body">
+            <input id="dummy" readonly></input>
+            <input  id="screen" readonly></input>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="type1" onclick="clearScreen()">AC</button></td>
+                        <td><button class="type1" onclick="clearScreen2()">C</button></td>
+                        <td><button class="type1" onclick="buttonclick('%')" >%</button></td>
+                        <td><button class="type2" onclick="buttonclick('/')" id="division">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="type3" onclick="buttonclick(7)">7</button></td>
+                        <td><button class="type3" onclick="buttonclick(8)">8</button></td>
+                        <td><button class="type3" onclick="buttonclick(9)">9</button></td>
+                        <td><button class="type2" onclick="buttonclick('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="type3" onclick="buttonclick(4)">4</button></td>
+                        <td><button class="type3" onclick="buttonclick(5)">5</button></td>
+                        <td><button class="type3" onclick="buttonclick(6)">6</button></td>
+                        <td><button class="type2" onclick="buttonclick('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="type3" onclick="buttonclick(1)">1</button></td>
+                        <td><button class="type3" onclick="buttonclick(2)">2</button></td>
+                        <td><button class="type3" onclick="buttonclick(3)">3</button></td>
+                        <td><button class="type2" onclick="buttonclick('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        
+                        
+                        <td colspan="2"><button class="type3" id="zero" onclick="buttonclick(0)">0</button></td>
+                        <td><button class="type3" onclick="buttonclick('.')">.</button></td>
+                        <td><button class="type2" onclick="equalTo('=')">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
